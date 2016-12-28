@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>employee data</title>
+		<link rel="stylesheet" type="text/css" href="css/home-page.css">
+	</head>
+	<body>
+		<div class="main-container">
+		    <section class="data-entry-container">
+				<h1>ADD Employee</h1>
+				<form>
+					<label for="name">Name :</label>
+					<input id="name" type="text"/>
+					<p id="nameMessageError">please type valid name</p>
+					<label for="email">Email :</label>
+					<input id="email" type="email"/>
+					<label for="phone">Phone No :</label>
+					<input id="phone" type="text"/>
+					<p id="phoneMessageError">please type valid phone no</p>
+					<label for="location">Location :</label>
+				    <select id="location">
+				        <option>select city</option>
+				    	<option>agra</option>
+				    	<option>faridabad</option>
+				    	<option>delhi</option>
+				    </select>
+				    <p id="locationMessageError">please select a city</p>
+				    <input type="button" value="Add" id="addEmployee" />
+				</form>
+			</section>
+
+			<section class="list-section">
+				<h1>Employee Details</h1>
+				<button id="getListButton">get details</button>
+				<table>
+					<tr>
+						<th>S.No</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Phone No</th>
+						<th>Location</th>
+					</tr>
+				</table>
+				<table id="employeeTable">
+					
+				</table>
+			</section>
+			<div id="pop"></div>
+		</div>
+		<script src="javascript/util.js"></script>
+		<script src="javascript/home-page.js"></script>
+		<script src="javascript/home-json.js"></script>
+		
+	</body>
+</html>

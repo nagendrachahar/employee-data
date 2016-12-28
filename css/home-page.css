@@ -1,0 +1,99 @@
+*{  
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: rgba(129,130,129,0.1);
+}
+.main-container{
+	box-sizing: border-box;
+	padding: 0 30px 30px 30px;
+	background: white;
+	border: 1px solid black;
+	margin: 40px auto;
+	width: 800px;
+	height: auto;
+}
+.data-entry-container{
+	color: white;
+	margin: 20px auto;
+	box-sizing: border-box;
+	background: rgb(120,100,50);
+	font-family: arial;
+	width: 500px;
+	padding: 0 0 20px 50px;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgb(120,100,50);
+}
+h1{
+	padding: 10px 0;
+}
+input[type="text"],input[type="email"],input[type="number"]{
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 400px;
+	display: block;
+	font-size: 18px;
+	padding: 5px;
+	border: 1px solid gray;
+}
+label{
+	display: inline-block;
+	padding: 7px 0 7px 0;
+}
+select{
+	background: white;
+	padding: 5px;
+	box-sizing: border-box;
+	display: block;
+	font-size: 18px;
+	width: 400px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+input[type="button"]{
+	margin-top: 15px;
+	font-size: 18px;
+	padding:5px 20px;
+	border-radius: 5px;
+}
+form p{
+	color: red;
+	display: none;
+}
+.list-section h1,.list-section button{
+	display: inline-block;
+}
+.list-section button{
+	font-size: 16px;
+	padding: 5px;
+	margin-left: 10px;
+}
+table{
+	width: 100%;
+}
+table,th,td{
+	font-size: 18px;
+	padding: 5px;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+table th:first-child,table td:first-child{
+	width: 50px;
+}
+table th:nth-child(2),table td:nth-child(2){
+	width: 150px;
+}
+table th:nth-child(3),table td:nth-child(3){
+    width: 200px;
+}
+table th:nth-child(4),table td:nth-child(4){
+	width: 100px;
+}
+table th:nth-child(5),table td:nth-child(5){
+	width: 100px;
+}
+.red{
+	border: 1px solid green;
+}
