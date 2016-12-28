@@ -34,8 +34,9 @@ function generateEmployeeTable() {
 
 	if(employeeList.length > 0) {
 		for (var i = 0; i < employeeList.length; i++) {
+			var sNo = i + 1;
 	 		html += "<tr>";
-	 		html += "<td>" + i + "</td>";
+	 		html += "<td>" + sNo + "</td>";
 	 		html += "<td>" + employeeList[i].firstname + "</td>";
 	 		html += "<td>" + employeeList[i].email + "</td>";
 	 		html += "<td>" + employeeList[i].phone + "</td>";
