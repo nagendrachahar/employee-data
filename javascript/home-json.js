@@ -1,6 +1,6 @@
-
+//json, where to push values
 var employeeList = [ ];
-
+//function to collect details and push into localstorage
 function collectDetail(){
 	
     employeeList.push({
@@ -13,7 +13,7 @@ function collectDetail(){
     setLocalStorage("employeeList", JSON.stringify(employeeList));  
  }
 
-
+//function to get data from localstorage
 function getEmployeData(){
 
 	var localStorageData = JSON.parse(getLocalStorage("employeeList"));
@@ -25,12 +25,12 @@ function getEmployeData(){
  	
  	//employeeList = [employeeList];
 }
-
+//function to generate employee table 
 function generateEmployeeTable() {
 
 	var html = "";
 
-	console.log(employeeList.length);
+	//console.log(employeeList.length);
 
 	if(employeeList.length > 0) {
 		for (var i = 0; i < employeeList.length; i++) {
@@ -43,7 +43,7 @@ function generateEmployeeTable() {
 	 		html += "<td>" + employeeList[i].location + "</td>";
 	 		html += "</tr>";
 	    }
-	    console.log(html);
+	    //console.log(html);
 	    document.getElementById("employeeTable").innerHTML = html;
 	}
 }

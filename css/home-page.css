@@ -2,9 +2,11 @@
 	padding: 0;
 	margin: 0;
 }
+/*background color body*/
 body{
 	background-color: rgba(129,130,129,0.1);
 }
+/*style for main container*/
 .main-container{
 	box-sizing: border-box;
 	padding: 0 30px 30px 30px;
@@ -14,6 +16,7 @@ body{
 	width: 800px;
 	height: auto;
 }
+/*style for form*/
 .data-entry-container{
 	color: white;
 	margin: 20px auto;
@@ -29,7 +32,8 @@ body{
 h1{
 	padding: 10px 0;
 }
-input[type="text"],input[type="email"],input[type="number"]{
+/*style for name, email and phone input fields*/
+input[type="text"],input[type="email"]{
 	box-sizing: border-box;
 	border-radius: 5px;
 	width: 400px;
@@ -38,10 +42,12 @@ input[type="text"],input[type="email"],input[type="number"]{
 	padding: 5px;
 	border: 1px solid gray;
 }
+/*style for label*/
 label{
 	display: inline-block;
 	padding: 7px 0 7px 0;
 }
+/*style for location dropdown*/
 select{
 	background: white;
 	padding: 5px;
@@ -52,16 +58,19 @@ select{
 	border: 1px solid gray;
 	border-radius: 5px;
 }
+/*style for add employee button*/
 input[type="button"]{
 	margin-top: 15px;
 	font-size: 18px;
 	padding:5px 20px;
 	border-radius: 5px;
 }
+/*style for error message in form*/
 form p{
 	color: red;
 	display: none;
 }
+/* style for generated table's content*/
 .list-section h1,.list-section button{
 	display: inline-block;
 }
@@ -80,13 +89,13 @@ table,th,td{
 	border: 1px solid black;
 }
 table th:first-child,table td:first-child{
-	width: 50px;
+	width: 40px;
 }
 table th:nth-child(2),table td:nth-child(2){
-	width: 150px;
+    width: 150px;
 }
 table th:nth-child(3),table td:nth-child(3){
-    width: 200px;
+    width: 250px;
 }
 table th:nth-child(4),table td:nth-child(4){
 	width: 100px;
